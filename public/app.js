@@ -1,10 +1,10 @@
 // Select all input fields
 const excludeSpecial = document.querySelectorAll('.key_value');
 
-// Loop through and exclude e, -, + from input fields
+// Loop through and exclude 'e' '+' ',' '-' from input fields
 for (let i = 0; i < excludeSpecial.length; i++) {
     excludeSpecial[i].addEventListener('keydown', function(e){
-        if ([69, 188, 189].includes(e.keyCode)) {
+        if ([69, 187, 188, 189].includes(e.keyCode)) {
             e.preventDefault();
         }
     });
